@@ -1,0 +1,59 @@
+.element {
+    font-family: arial;
+    font-size: 20px;
+}
+
+.scheduled:before {
+    content: "  scheduled  ";
+}
+
+.scheduled {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.predicted:before {
+    content: "  predicted  ";
+}
+
+.predicted {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.time {
+    font-style: normal;
+    font-size: 20px;
+    padding-left:2.5em;
+}
+
+.first {
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    transition: top .5s;
+}
+
+.middle {
+    position: absolute;
+    top: 320px;
+    left: 60px;
+}
+
+.last {
+    position: absolute;
+    top: 520px;
+    left: 60px;
+    transition: top .5s;
+}
+
+h1 {
+    font-family: arial;
+    padding-left:50px;
+}
+
+button {
+    margin-left: 15px;
+    padding: 3px;
+    font-family: arial;
+}

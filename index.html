@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="mbtaApp" ng-controller="appController">
+   <head>
+      <title>Trip Planner</title>
+      <link rel="stylesheet" href="index.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script src="index.js"></script>
+   </head>
+   <body>
+
+      <h1>
+        <tag ng-if="outbound">
+           Towards Work
+        </tag>
+        <tag ng-if="!outbound">
+           Towards Home
+        </tag>
+        <button ng-click="changeDirection()">REVERSE</button>
+      </h1>
+
+      <div class="element" ng-class="{'first': outbound, 'last': !outbound }">Train arrives at Winchester Center<br><br>
+         <tag class="scheduled"><tag class=time id=trainArrival>10:00</tag></tag><br><br>
+         <tag class="predicted"></tag>
+      </div>
+
+      <div class="element middle">Bus arrives at Winchester Center<br><br>
+         <tag class="scheduled"><tag class=time id=busArrival1>11:00</tag></tag><br><br>
+         <tag class="predicted"></tag>
+      </div>
+
+      <div class="element" ng-class="{'first': !outbound, 'last': outbound }">Bus arrives at office park<br><br>
+         <tag class="scheduled"><tag class=time id=busArrival2>12:00</tag></tag><br><br>
+         <tag class="predicted"></tag>
+      </div>
+
+  </body>
+</html>
