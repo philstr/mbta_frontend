@@ -3,8 +3,6 @@ var apiUrl = "localhost"
 
 app.controller('appController', function($scope) {
 
-  $scope.name= "John";
-
   $scope.outbound = true;
 
   $scope.changeDirection = function() {
